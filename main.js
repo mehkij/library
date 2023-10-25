@@ -14,3 +14,14 @@ function addBookToLibrary() {
   let input = prompt("Enter the name of the book you would like to add:");
   myLibrary.push(input);
 }
+
+function displayBooks() {
+  for (index = 0; index <= myLibrary; index++) {
+    const div = document.createElement("div");
+    div.classList.add("book");
+    div.textContent = myLibrary[index];
+    const p = document.createElement("p");
+    div.appendChild(p);
+    container.appendChild(div);
+  };
+}
