@@ -16,7 +16,13 @@ function addBookToLibrary() {
   button.addEventListener("click", () => {
     let input = prompt("Enter the name of the book you would like to add:");
     myLibrary.push(input);
-    displayBooks();
+
+    if (document.querySelector(".container > .book")) { // Clears the display before it appends the new book. This makes it so it doesn't append the entire array repeatedly.
+      container.textContent = "";
+      displayBooks();
+    } else {
+      displayBooks()
+    }
   });
 };
 
@@ -34,7 +40,3 @@ function displayBooks() {
 
 displayBooks();
 addBookToLibrary();
-
-// Current issues: 
-
-// After using the button, the entire array is appended to the display again, instead of just the added book.
