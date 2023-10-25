@@ -20,6 +20,7 @@ function displayBooks() {
   for (index = 0; index <= myLibrary.length; index++) {
     const div = document.createElement("div");
     div.classList.add("book");
+    div.setAttribute("style", "display: flex; background-color: red; border-radius: 5px;")
     const p = document.createElement("p");
     p.textContent = myLibrary[index];
     div.appendChild(p);
