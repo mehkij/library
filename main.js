@@ -1,4 +1,5 @@
-const myLibrary = [];
+const myLibrary = ["The Hobbit", "Harry Potter", "Lord of the Rings", "Divergent", "A Thousand Splendid Suns"];
+const container = document.querySelector(".container");
 
 function Book(name, author, pages, status) {
   this.name = name
