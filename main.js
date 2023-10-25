@@ -17,7 +17,7 @@ function addBookToLibrary() {
 }
 
 function displayBooks() {
-  for (index = 0; index <= myLibrary; index++) {
+  for (index = 0; index <= myLibrary.length; index++) {
     const div = document.createElement("div");
     div.classList.add("book");
     div.textContent = myLibrary[index];
@@ -26,3 +26,5 @@ function displayBooks() {
     container.appendChild(div);
   };
 }
+
+displayBooks();
