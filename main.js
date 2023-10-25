@@ -9,12 +9,12 @@ function Book(name, author, pages, status) {
   this.info = function() {
     return name + " by " + author + ", " + pages + ", " + status + ".";
   }
-}
+};
 
 function addBookToLibrary() {
   let input = prompt("Enter the name of the book you would like to add:");
   myLibrary.push(input);
-}
+};
 
 function displayBooks() {
   for (index = 0; index <= myLibrary.length; index++) {
@@ -25,6 +25,6 @@ function displayBooks() {
     div.appendChild(p);
     container.appendChild(div);
   };
-}
+};
 
 displayBooks();
