@@ -17,14 +17,14 @@ function addBookToLibrary() {
 }
 
 function displayBooks() {
-  myLibrary.forEach(function() {
+  for (index = 0; index <= myLibrary.length; index++) {
     const div = document.createElement("div");
     div.classList.add("book");
-    div.textContent = myLibrary;
     const p = document.createElement("p");
+    p.textContent = myLibrary[index];
     div.appendChild(p);
     container.appendChild(div);
-  });
+  };
 }
 
 displayBooks();
