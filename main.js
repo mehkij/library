@@ -20,8 +20,6 @@ function addBookToLibrary() {
     if (document.querySelector(".container > .book")) { // Clears the display before it appends the new book. This makes it so it doesn't append the entire array repeatedly.
       container.textContent = "";
       displayBooks();
-    } else {
-      displayBooks()
     }
   });
 };
