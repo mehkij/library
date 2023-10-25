@@ -17,10 +17,14 @@ function addBookToLibrary() {
     let input = prompt("Enter the name of the book you would like to add:");
     myLibrary.push(input);
 
-    if (document.querySelector(".container > .book")) { // Clears the display before it appends the new book. This makes it so it doesn't append the entire array repeatedly.
+    // Checks if there are books in the array, then clears the display before it appends the new book. This makes it so it doesn't append the entire array repeatedly.
+
+    if (document.querySelector(".container > .book")) {
       container.textContent = "";
       displayBooks();
-    }
+    } else {
+      displayBooks();
+    };
   });
 };
 
