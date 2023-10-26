@@ -43,9 +43,13 @@ function displayBooks() {
   };
 };
 
+// Opens up the modal form
+
 showButton.addEventListener("click", () => {
   dialog.showModal();
 });
+
+// Closes the modal form
 
 closeButton.addEventListener("click", () => {
   dialog.close();
