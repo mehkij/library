@@ -4,6 +4,7 @@ const button = document.querySelector(".new-book");
 const dialog = document.querySelector("dialog");
 const showButton = document.querySelector(".dialog-button")
 const closeButton = document.querySelector(".close-button")
+const submitButton = document.querySelector(".submit-button")
 
 function Book(name, author, pages, status) {
   this.name = name
@@ -53,6 +54,10 @@ showButton.addEventListener("click", () => {
 
 closeButton.addEventListener("click", () => {
   dialog.close();
+});
+
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
 });
 
 displayBooks();
