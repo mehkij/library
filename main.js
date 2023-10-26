@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 const button = document.querySelector(".new-book");
 const dialog = document.querySelector("dialog");
 const showButton = document.querySelector(".dialog-button")
+const closeButton = document.querySelector(".close-button")
 
 function Book(name, author, pages, status) {
   this.name = name
@@ -44,6 +45,10 @@ function displayBooks() {
 
 showButton.addEventListener("click", () => {
   dialog.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+  dialog.close();
 });
 
 displayBooks();
