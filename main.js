@@ -62,3 +62,12 @@ submitButton.addEventListener("click", (event) => {
 
 displayBooks();
 addBookToLibrary();
+
+// Current objectives:
+
+// Figure out a way for the user input to be turned into a new object in the Book() constructor.
+// Hook up the form modal to the addBookToLibrary() function.
+
+// Bugs to fix: 
+
+// When the "cancel" button is clicked in the user input text box, it appends a blank element to the screen. This will likely be an issue when we transfer the main user input to the dialog form.
