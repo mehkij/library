@@ -1,6 +1,8 @@
 const myLibrary = ["The Hobbit", "Harry Potter", "Lord of the Rings", "Divergent", "A Thousand Splendid Suns"];
 const container = document.querySelector(".container");
 const button = document.querySelector(".new-book");
+const dialog = document.querySelector("dialog");
+const showButton = document.querySelector(".dialog-button")
 
 function Book(name, author, pages, status) {
   this.name = name
@@ -39,6 +41,10 @@ function displayBooks() {
     container.appendChild(div);
   };
 };
+
+showButton.addEventListener("click", () => {
+  dialog.showModal();
+});
 
 displayBooks();
 addBookToLibrary();
